@@ -105,3 +105,13 @@ ssh ansibleadmin@172.31.8.11
 chown -R devopsadmin:devopsadmin /etc/ansible
 
 #chmod 600 /home/ansibleadmin/.ssh/*
+
+#Mrunal : further lecture :
+
+devopsadmin@ip-172-31-41-1:/etc$ cd a
+acpi/         alternatives/ ansible/      apparmor/     apparmor.d/   apport/       apt/
+devopsadmin@ip-172-31-41-1:/etc$ cd ansible
+devopsadmin@ip-172-31-41-1:/etc/ansible$ ls
+ansible.cfg  hosts  roles
+
+
