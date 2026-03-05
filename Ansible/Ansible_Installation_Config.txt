@@ -113,5 +113,12 @@ acpi/         alternatives/ ansible/      apparmor/     apparmor.d/   apport/   
 devopsadmin@ip-172-31-41-1:/etc$ cd ansible
 devopsadmin@ip-172-31-41-1:/etc/ansible$ ls
 ansible.cfg  hosts  roles
+###update vi etc/ansible/hosts
+devopsadmin@ip-172-31-41-1:/etc/ansible$ vi hosts
+root@ip-172-31-41-1:~# chown -R devopsadmin:devopsadmin /etc/ansible
+root@ip-172-31-41-1:~# su - devopsadmin
+devopsadmin@ip-172-31-41-1:~$ vi hosts
 
-
+[testnodes]
+samplenode1 ansible_ssh_host=172.31.2.214 ansible_ssh_user=ansibleadmin
+samplenode2 ansible_ssh_host=172.31.8.11 ansible_ssh_user=ansibleadmin
